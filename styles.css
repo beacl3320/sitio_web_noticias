@@ -53,7 +53,7 @@ a{
     height: 550px;
     background: url(/assets/showxcase2.jpeg) no-repeat center center/cover;
     margin: 20px 0;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,4 +161,55 @@ a{
 .links a i {
     font-size: 3rem;
 }
+
+/* FOOTER-LINKS */
+.footer-links{
+    background: grey;
+    color: white;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px; */
+    /* align-items: flex-start;
+    justify-content: center; */
+}
+
+.footer-container-link{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.footer-container-link a{
+    padding-bottom: 8px;
+}
+
+.footer{
+    background: grey;
+    color:honeydew;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 780px) {
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-banner-one .content,
+    .cards-banner-two .content{
+        width: 80%;
+       padding: 20px 0 0 30px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
