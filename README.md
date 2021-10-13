@@ -6,4 +6,5 @@
     } 
 # imágenes -> banco de imágenes pexels (https://www.pexels.com/es-es/)
 
-    
+# scroll -> efecto para que los textos vayan añadiéndose según se vaya haciendo scroll en la página web -> scroll reveal(https://scrollrevealjs.org/)
+

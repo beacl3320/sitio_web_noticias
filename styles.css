@@ -46,6 +46,16 @@ a{
     border-bottom: 2px solid white;
 }
 
+.button{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
 /* showcase */
 
 .showcase{
@@ -103,7 +113,7 @@ a{
 .cards-banner-one{
     width: 100%;
     height: 350px;
-    background: url('./assets/banner.png.crdownload') no-repeat center center/cover;
+    background: url('./assets/banner4.jpg') no-repeat center center/cover;
     margin: 50px 0;
 }
 
@@ -199,6 +209,36 @@ a{
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 780px) {
+
+    .button{
+        display: block;
+    }
+    .nav-main .nav-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        left: 0;
+        background: grey;
+        /* height: 100%; */
+        padding: 30px;
+        opacity: .9;
+        transform: translate(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main .nav-menu.show{
+        transform: translate(-20px);
+    }
+
+    .nav-main .nav-menu a{
+        padding: 20px;
+    }
+    
+    .nav-main .nav-menu-right{
+        margin-right: 50px;
+    }
+
     .news-cards{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -206,10 +246,23 @@ a{
     .cards-banner-one .content,
     .cards-banner-two .content{
         width: 80%;
-       padding: 20px 0 0 30px;
+        padding: 20px 0 0 30px;
     }
 
     .footer-links .footer-container{
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
+@media (max-width: 500px){
+  .news-cards{
+      grid-template-columns: 1fr;
+  }
+  .news-cards img{
+      height: 200px;
+  }
+
+  .footer-links .footer-container{
+      grid-template-columns: 1fr;
+  }
+}
