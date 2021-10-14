@@ -1,7 +1,7 @@
-console.log('hello world');
+/* console.log('hello world'); */
 
 document.querySelector('.button').addEventListener('click', () => {
-    console.log('click');
+    /* console.log('click'); */
     document.querySelector('.nav-menu').classList.toggle('show');
 })
 
